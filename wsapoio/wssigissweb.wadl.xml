@@ -1,0 +1,81 @@
+<application xmlns="http://wadl.dev.java.net/2009/02">
+<doc xmlns:jersey="http://jersey.java.net/" jersey:generatedBy="Jersey: 2.26 2017-09-05 11:50:34"/>
+<doc xmlns:jersey="http://jersey.java.net/" jersey:hint="This is simplified WADL with user and core resources only. To get full WADL with extended resources use the query parameter detail. Link: http://wshml.sigissweb.com/wshmlsigissweb/rest/application.wadl?detail=true"/>
+<grammars>
+<include href="application.wadl/xsd0.xsd">
+<doc title="Generated" xml:lang="en"/>
+</include>
+</grammars>
+<resources base="http://wshml.sigissweb.com/wshmlsigissweb/rest/">
+<resource path="/login">
+<method id="login" name="POST">
+<request>
+<representation mediaType="application/json"/>
+</request>
+<response>
+<representation mediaType="*/*"/>
+</response>
+</method>
+</resource>
+<resource path="/nfes">
+<method id="emissao" name="PUT">
+<request>
+<ns2:representation xmlns:ns2="http://wadl.dev.java.net/2009/02" xmlns="" element="notafiscal" mediaType="application/xml"/>
+<ns2:representation xmlns:ns2="http://wadl.dev.java.net/2009/02" xmlns="" element="notafiscal" mediaType="application/json"/>
+</request>
+<response>
+<representation mediaType="application/xml"/>
+<representation mediaType="application/json"/>
+</response>
+</method>
+<method id="emissao" name="POST">
+<request>
+<representation mediaType="text/xml"/>
+<representation mediaType="application/json"/>
+</request>
+<response>
+<representation mediaType="application/xml"/>
+<representation mediaType="application/json"/>
+</response>
+</method>
+<resource path="/nfimpressa/{numeronf}/serie/{serie}">
+<param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="serie" style="template" type="xs:string"/>
+<param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="numeronf" style="template" type="xs:int"/>
+<method id="nfimpressa" name="GET">
+<response>
+<representation mediaType="application/pdf"/>
+</response>
+</method>
+</resource>
+<resource path="/cancela/{numeronf}/serie/{serie}/motivo/{motivo}">
+<param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="motivo" style="template" type="xs:string"/>
+<param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="serie" style="template" type="xs:string"/>
+<param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="numeronf" style="template" type="xs:int"/>
+<method id="cancela" name="GET">
+<response>
+<representation mediaType="*/*"/>
+</response>
+</method>
+</resource>
+<resource path="/pegaxml/{numerorps}/serierps/{serierps}">
+<param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="numerorps" style="template" type="xs:int"/>
+<param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="serierps" style="template" type="xs:string"/>
+<method id="pegaxml" name="GET">
+<response>
+<representation mediaType="*/*"/>
+</response>
+</method>
+</resource>
+<resource path="/envianf/{numeronf}/serie/{serie}/comcopiaprestador/{comcopiaprestador}">
+<param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="serie" style="template" type="xs:string"/>
+<param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="numeronf" style="template" type="xs:int"/>
+<param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="comcopiaprestador" style="template" type="xs:string"/>
+<method id="envianf" name="GET">
+<response>
+<representation mediaType="*/*"/>
+</response>
+</method>
+</resource>
+</resource>
+</resources>
+</application>

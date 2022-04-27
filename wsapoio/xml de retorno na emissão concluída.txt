@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<notafiscal>
+    <cnpj_cpf_prestador>00000000000</cnpj_cpf_prestador>
+    <pessoa_prestador>J</pessoa_prestador>
+    <ie_prestador>11111111111</ie_prestador>
+    <im_prestador>3529010</im_prestador>
+    <razao_social_prestador>ARTHUR LUNDGREN TECIDOS S/A-CASAS PERNAMBUCANAS</razao_social_prestador>
+    <endereco_prestador>AV.SETE DE SETEMBRO N 335</endereco_prestador>
+    <numero_ende_prestador></numero_ende_prestador>
+    <bairro_prestador>Centro</bairro_prestador>
+    <cep_prestador>13171440</cep_prestador>
+    <cidade_prestador>Sumar&#233;</cidade_prestador>
+    <uf_prestador>SP</uf_prestador>
+    <exterior_dest>0</exterior_dest>
+    <cnpj_cpf_destinatario>36331782796</cnpj_cpf_destinatario>
+    <pessoa_destinatario>F</pessoa_destinatario>
+    <ie_destinatario></ie_destinatario>
+    <im_destinatario></im_destinatario>
+    <razao_social_destinatario>JO&#195;O ALBERTO SILVA</razao_social_destinatario>
+    <endereco_destinatario>R JOAO BISSOTTO FILHO</endereco_destinatario>
+    <numero_ende_destinatario>1728</numero_ende_destinatario>
+    <complemento_ende_destinatario>CASA 48</complemento_ende_destinatario>
+    <bairro_destinatario>Ortizes</bairro_destinatario>
+    <cep_destinatario>13275410</cep_destinatario>
+    <cidade_destinatario>Valinhos</cidade_destinatario>
+    <uf_destinatario>SP</uf_destinatario>
+    <pais_destinatario>Brasil</pais_destinatario>
+    <fone_destinatario>(19) 0000-0000</fone_destinatario>
+    <email_destinatario>suporte@sigissweb.com</email_destinatario>
+    <numero_nf>1754</numero_nf>
+    <serie>NFE</serie>
+    <valor_nf>1230.75</valor_nf>
+    <deducao>0.00</deducao>
+    <valor_servico>1230.75</valor_servico>
+    <data_emissao>Thu Oct 10 00:00:00 BRT 2019</data_emissao>
+    <forma_de_pagamento></forma_de_pagamento>
+    <descricao>VICTORIA PENKAL SACHO - MENSALIDADES REGULARES 02-2019/1BOLSA E/OU DDESCONTO CONCEDIDO 0,00% - VALOR A PAGAR R$ 1.295,80</descricao>
+    <id_codigo_servico>10.01</id_codigo_servico>
+    <regime>V</regime>
+    <cancelada>N</cancelada>
+    <iss_retido>N</iss_retido>
+    <aliq_iss>3.00</aliq_iss>
+    <valor_iss>36.9225</valor_iss>
+    <bc_pis>0.00</bc_pis>
+    <aliq_pis>0.00</aliq_pis>
+    <valor_pis>0.00</valor_pis>
+    <bc_cofins>0.00</bc_cofins>
+    <aliq_cofins>0.00</aliq_cofins>
+    <valor_cofins>0.00</valor_cofins>
+    <bc_csll>0.00</bc_csll>
+    <aliq_csll>0.00</aliq_csll>
+    <valor_csll>0.00</valor_csll>
+    <bc_irrf>0.00</bc_irrf>
+    <aliq_irrf>0.00</aliq_irrf>
+    <valor_irrf>0.00</valor_irrf>
+    <bc_inss>0.00</bc_inss>
+    <aliq_inss>0.00</aliq_inss>
+    <valor_inss>0.00</valor_inss>
+    <nf_avulsa>N</nf_avulsa>
+    <sistema_gerador>WINSIGAA</sistema_gerador>
+    <serie_rps>RP</serie_rps>
+    <rps>3</rps>
+    <codigo>000009834000120000004780130000020661097570</codigo>
+</notafiscal>
+

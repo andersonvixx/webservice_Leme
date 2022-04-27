@@ -1,0 +1,25 @@
+public void LoginSistema(string cnpj_cliente, string senha){
+
+	string json = "{ \"login\": \"" + cnpj_cliente + "\",\"senha\":\"" + senha + "\"}";
+
+	System.Net.HttpWebRequest webrequest = (HttpWebRequest)System.Net.WebRequest.Create("https://wshml.sigissweb.com/rest/login");
+	webrequest.Method = "POST";
+	webrequest.ContentType = "application/json; charset=utf-8";
+
+	Stream stream = webrequest.GetRequestStream();
+	
+	using (var streamWriter = new StreamWriter(webrequest.GetRequestStream())){
+		streamWriter.Write(json);
+		streamWriter.Flush();
+	}
+
+	using (WebResponse response = webrequest.GetResponse()){
+		
+		using (StreamReader reader = new StreamReader(response.GetResponseStream())){
+			//VARIAVEL GLOBAL
+			login_sistema = reader.ReadToEnd();
+		}
+	}
+
+	stream.Close();
+}
